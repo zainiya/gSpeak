@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.login"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.login.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.login.NextActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.NEXT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.login.RegistrationActivity"
+            android:label="@string/title_activity_registration" >
+        </activity>
+        <activity
+            android:name="com.example.login.ForgetActivity"
+            android:label="@string/title_activity_forget" >
+        </activity>
+        <activity
+            android:name="com.example.login.PwdActivity"
+            android:label="@string/title_activity_pwd" >
+        </activity>
+        <activity
+            android:name="com.example.login.GspeakActivity"
+            android:label="@string/title_activity_gspeak" >
+            
+        </activity>
+        <activity
+            android:name="com.example.login.HelloViewfinderActivity"
+            android:label="@string/title_activity_hello_viewfinder"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.login.Display"
+            android:label="@string/title_activity_display" >
+        </activity>
+        <activity
+            android:name="com.example.login.TtsActivity"
+            android:label="@string/title_activity_tts" >
+        </activity>
+        <activity
+            android:name="com.example.login.Train"
+            android:label="@string/title_activity_train" >
+        </activity>
+        <activity
+            android:name="com.example.login.AllAppsActivity"
+            android:label="@string/title_activity_all_apps" >
+        </activity>
+        <activity
+            android:name="com.example.login.ApplicationAdapter"
+            android:label="@string/title_activity_application_adapter" >
+        </activity>
+        <activity
+            android:name="com.example.login.ShortcutActivity"
+            android:label="@string/title_activity_shortcut" >
+        </activity>
+        
+    </application>
+
+</manifest>
